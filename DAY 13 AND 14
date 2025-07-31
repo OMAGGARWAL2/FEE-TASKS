@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reappear Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #ff6600;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 80px;
+    }
+
+    input[type="submit"] {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #e65c00;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Reappear Examination Form</h2>
+    <form action="#" method="post">
+      
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="roll">Roll Number</label>
+      <input type="text" id="roll" name="roll" required>
+
+      <label for="subject">Subject Name</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="subjectCode">Subject Code</label>
+      <input type="text" id="subjectCode" name="subjectCode" required>
+
+      <label for="reason">Reason for Reappear</label>
+      <textarea id="reason" name="reason" placeholder="E.g. Absent, Failed, Low Marks, etc."></textarea>
+
+      <label for="attempt">Attempt</label>
+      <select id="attempt" name="attempt">
+        <option value="1st">1st Reappear</option>
+        <option value="2nd">2nd Reappear</option>
+        <option value="Final">Final Attempt</option>
+      </select>
+
+      <input type="submit" value="Submit Reappear Request">
+    </form>
+  </div>
+
+</body>
+</html>
