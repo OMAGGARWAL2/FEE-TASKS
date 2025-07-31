@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hindustan Times Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    /* Top Navbar */
+    .navbar {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      display: inline;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+
+    .navbar ul li a:hover {
+      background-color: orange;
+      border-radius: 4px;
+    }
+
+    /* News Grid */
+    .news-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .news-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .news-card h3 {
+      padding: 15px;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .news-card p {
+      padding: 0 15px 15px 15px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <div class="navbar">
+    <h1>Hindustan Times Clone</h1>
+    <ul>
+      <li><a href="#">World</a></li>
+      <li><a href="#">India</a></li>
+      <li><a href="#">Politics</a></li>
+      <li><a href="#">Tech</a></li>
+      <li><a href="#">Sports</a></li>
+    </ul>
+  </div>
+
+  <!-- News Cards -->
+  <div class="news-container">
+    <div class="news-card">
+      <img src="https://via.placeholder.com/400x200" alt="News Image">
+      <h3>India's Chandrayaan-4 Prepares for Launch in 2026</h3>
+      <p>ISRO announces ambitious lunar mission to collect rock samples. More details to follow as updates roll out from the mission control.</p>
+    </div>
+
+    <div class="news-card">
+      <img src="https://via.placeholder.com/400x200" alt="News Image">
+      <h3>Tech Giants Clash Over AI Regulations</h3>
+      <p>Google and Microsoft lock horns in a debate about ethical frameworks for artificial intelligence development and deployment.</p>
+    </div>
+
+    <div class="news-card">
+      <img src="https://via.placeholder.com/400x200" alt="News Image">
+      <h3>India Defeats Australia in Thrilling Cricket Finale</h3>
+      <p>Rohit Sharma's brilliant performance leads India to victory in a nail-biting finish at the ICC T20 Championship.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Hindustan Times Clone | All rights reserved.
+  </footer>
+
+</body>
+</html>
